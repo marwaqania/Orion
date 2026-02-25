@@ -1,0 +1,31 @@
+body{
+    color: black;
+}
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 3em;
+  font-family: arial;
+  text-shadow: 2px 2px 4px #000000;
+  vertical-align: text-top;
+}
+button {
+  background-color: #849cff ;
+  border: none;
+  align-content: center;
+  color: #dce4ff;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 1.5px 1.5px 2px #1f1e21cf;
+  display: inline-block;
+  font-size: 15px;
+  border-radius: 6px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+button:hover {
+  background-color: #fafafa; 
+  color: #feea68;
+}
