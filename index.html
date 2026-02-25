@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Random Password Generator</h2>
+<p id="output">Click the button</p>
+<button onclick="generatePassword()">Generate</button>
+
+<script>
+const passwords = [
+"e4x7m","p2t9q","r1k8v","f1m6x","p8t3q","r2k9v","g8x2m","p4t7q","r1k9v","h3m9x","p1t6q","r4k8v","i6x4m","p9t2q","r1k7v","j2m7x","p8t1q","r3k9v","k9x1m","p4t6q","r2k8v","l3m8x","p2t9q","r1k7v","m6x2p","t9q1r","k4v8b","n1m9x","p3t7q","r2k8v","o7x3m","p8t1q","r4k9v","p2m6x","p1t9q","r3k8v","q8x4m","p7t2q","r1k9v","r3m1x","p9t6q","r2k8v","s9x2m","p4t7q","r1k8v","t4m8x","p1t9q","r2k7v","u1x7m","p6t3q","r4k9v"
+  // add the rest here
+];
+
+function generatePassword() {
+  const randomIndex = Math.floor(Math.random() * passwords.length);
+  document.getElementById("output").innerText = passwords[randomIndex];
+  document.getElementById("btn").disabled = true;
+}
+</script>
+
+</body>
+</html>
