@@ -12,6 +12,10 @@ h1 {
   text-shadow: 2px 2px 4px #000000;
   vertical-align: text-top;
 }
+h3{
+    color: white;
+    text-align: center;
+}
 button {
   background-color: white ;
   border: none;
@@ -34,5 +38,6 @@ button:hover {
 .box{
   text-align: center;
 }
+
 
 
