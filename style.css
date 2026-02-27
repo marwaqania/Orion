@@ -13,8 +13,8 @@ h1 {
   vertical-align: text-top;
 }
 h3{
-    color: white;
-    text-align: center;
+  color: white;
+  text-align: center;
 }
 button {
   background-color: white ;
@@ -38,6 +38,7 @@ button:hover {
 .box{
   text-align: center;
 }
+
 
 
 
