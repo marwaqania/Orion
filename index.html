@@ -6,13 +6,15 @@
 </head>
 <body>
 
-<h2>Random Password Generator</h2>
-<p id="output">Click the button</p>
-<button onclick="generatePassword()">Generate</button>
+<h1>Random Password Generator</h1>
+<div class="box">
+  <p id="output">Click the button</p>
+  <button onclick="generatePassword()">Generate</button>
+</div>
 
 <script>
 const passwords = [
-"e4x7m","p2t9q","r1k8v","f1m6x","p8t3q","r2k9v","g8x2m","p4t7q","r1k9v","h3m9x","p1t6q","r4k8v","i6x4m","p9t2q","r1k7v","j2m7x","p8t1q","r3k9v","k9x1m","p4t6q","r2k8v","l3m8x","p2t9q","r1k7v","m6x2p","t9q1r","k4v8b","n1m9x","p3t7q","r2k8v","o7x3m","p8t1q","r4k9v","p2m6x","p1t9q","r3k8v","q8x4m","p7t2q","r1k9v","r3m1x","p9t6q","r2k8v","s9x2m","p4t7q","r1k8v","t4m8x","p1t9q","r2k7v","u1x7m","p6t3q","r4k9v"
+"h3t8q","n4x7b","p2m9z","r6k1v", "w8c3t","y5n2x"
   // add the rest here
 ];
 
@@ -20,6 +22,16 @@ function generatePassword() {
   const randomIndex = Math.floor(Math.random() * passwords.length);
   document.getElementById("output").innerText = passwords[randomIndex];
   document.getElementById("btn").disabled = true;
+}
+function generatePassword() {
+  if (passwords.length === 0) {
+    document.getElementById("output").innerText = "No passwords left!";
+    return;
+  }
+
+  const randomIndex = Math.floor(Math.random() * passwords.length);
+  const selected = passwords.splice(randomIndex, 1)[0]; // remove it
+  document.getElementById("output").innerText = selected;
 }
 </script>
 
